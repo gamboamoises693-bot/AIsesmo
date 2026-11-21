@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "JARVIS",
+    "slug": "jarvis-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#050b16",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.jarvis"
+    },
+    "android": {
+      "package": "com.example.jarvis",
+      "adaptiveIcon": {
+        "backgroundColor": "#050b16",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "usesCleartextTraffic": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "JARVIS needs the microphone to hear your commands.",
+          "speechRecognitionPermission": "JARVIS uses speech recognition to understand your commands.",
+          "androidSpeechServicePackages": ["com.google.android.googlequicksearchbox"]
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
